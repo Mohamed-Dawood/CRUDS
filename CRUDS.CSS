@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.main .head {
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main .head h2 {
+    margin: 5px;
+}
+
+.main .head p {
+    margin: 5px;
+}
+
+:placeholder-shown {
+    text-transform: capitalize;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+input:focus {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.main .inputs section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .inputs section input {
+    width: 20%;
+}
+
+.main .inputs section small {
+    background-color: rgb(185, 8, 8);
+    margin: 10px 0;
+    border-radius: 6px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.main .inputs section small::before {
+    content: 'total: ';
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: rgba(91, 0, 176, 0.979);
+    border-radius: 20px;
+    transition: 0.5s;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(121, 0, 234, 0.979);
+}
+
+.main .inputs button {
+    width: 100%;
+}
+
+.main .inputs button:hover {
+    letter-spacing: 1.5px;
+}
+
+.outputs section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.outputs section button {
+    width: 40%;
+}
+
+.outputs table {
+    width: 100%;
+    text-align: center;
+}
+
+.outputs table th {
+    text-transform: capitalize;
+}
+
+#deleteAll {
+    margin-bottom: 20px;
+}
+
+.outputs table {}
+
+.outputs tbody button {
+    max-width: 100px;
+}
+
+.outputs tbody button:hover {
+    scale: 1.03;
+}
